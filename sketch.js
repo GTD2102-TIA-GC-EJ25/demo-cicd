@@ -1,14 +1,18 @@
-function preload() {
-  
-}
+let rectColor = 'blue';
 
 function setup() {
- // put setup code here
-  createCanvas(800, 600)
+  createCanvas(400, 400);
 }
 
 function draw() {
-  // put drawing code here
-  background(255)
-  square(100,100,100)
+  background(220);
+  fill(rectColor);
+  rect(150, 150, 100, 100);
+}
+
+function mousePressed() {
+  // Usamos la lógica que testearemos después
+  if (mouseX > 150 && mouseX < 250 && mouseY > 150 && mouseY < 250) {
+    rectColor = getNextColor(rectColor);
+  }
 }
