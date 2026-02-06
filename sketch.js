@@ -7,6 +7,7 @@ function setup() {
 function draw() {
   background(220);
   fill(rectColor);
+  circle(150,100,40)
   rect(150, 150, 100, 100);
 }
 
